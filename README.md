@@ -7,5 +7,4 @@ To your heart's desire
 
 <hr>
 
-<p>Copyright (c) 2021</p>
 <p>Licensed under the <a href="LICENSE">MIT LICENSE<a></p>

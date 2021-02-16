@@ -1,22 +1,32 @@
+* {
+  --background: #f8f9fa;
+  --background-sec: #e9ecef;
+  --background-alt: #ced4da;
+  --foreground: #212529;
+  --foreground-alt: #dee2e6;
+  --foreground-sec: #495057
+}
 body {
-  margin: 0;
+  margin: 0 10%;
   padding: 0;
   font-family:Arial, Helvetica, sans-serif;
-  background: #eee;
+  background: var(--background);
+  color: var(--foreground);
 }
 .navbar {
   padding: 10px;
   display:flex;
   justify-content: center;
 }
+
 .settings {
-  margin: 40px 50px;
+  margin: 20px 50px;
   margin-right: 10px;
   display: flex;
   float: left;
   width: 200px;
-  min-height: 60vh;
-  background: red;
+  min-height: 70vh;
+  background: var(--background-alt);
 }
 .settings .wrapper {
   width: 100%;
@@ -34,16 +44,25 @@ body {
   justify-content: center;
   padding: 7px;
   border: none;
-  background: #eee;
+  background: var(--foreground-alt);
+  color: var(--foreground);
 }
 .settings .wrapper .search button{
   display: flex;
   justify-content: center;
   padding: 10px 50px;
-  background: #eee;
+  background: var(--foreground-alt);
   border: none;
+  color: var(--foreground);
 }
 
+button:hover, input:hover {
+  opacity: 70%;
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+}
 
 .settings .wrapper .search{
   position: relative;
@@ -56,43 +75,52 @@ body {
 .card {
   display: flex;
   justify-content: center;
-  margin: 40px 50px;
-  min-height: 60vh;
-  background: aliceblue;
+  margin: 20px 60px;
+  min-height: 70vh;
+  background: var(--background-sec);
 }
 .card .wrapper{
   justify-content: center;
 }
 
-.card .wrapper .name h2{
+.card .wrapper .name h2, p{
   display: flex;
   justify-content: center;
   margin-top: 20px;
   font-size: 20px;
+  text-align: center;
 }
-
+p {
+  font-size: 15px;
+}
 a {
     color: inherit;
     text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: var(--foreground-sec);
 }
 .card .wrapper .stats ul{
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
 }
 .card .wrapper .stats ul li {
   margin: 0 20px;
   list-style: none;
 }
+.card .wrapper .stats ul li i {
+  display: flex;
+  justify-content: center;
+}
 
-.language {
+.info {
   display: flex;
   justify-content: center;
   padding: 10px 10px;
-  background: #eee;
+  margin: 10px 10px;
+  background: var(--foreground-alt);
 }

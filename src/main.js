@@ -1,5 +1,3 @@
-// Copyright (c) 2021 Karem34
-
 const showData = async () => {
   let lang = document.getElementById('lang-input').value
   let license = document.getElementById('license-input').value
